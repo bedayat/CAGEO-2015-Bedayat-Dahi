@@ -1,0 +1,69 @@
+ps[1] = {GrayLevel[0], Bold, Thickness[3.*^-6*imgSize]}
+ 
+ps[2] = {RGBColor[0.72987, 0.239399, 0.230961], Bold, 
+     Thickness[3.*^-6*imgSize]}
+ 
+ps[3] = {RGBColor[0.253651, 0.344893, 0.558151], Bold, 
+     Thickness[3.*^-6*imgSize]}
+ 
+ps[4] = {RGBColor[0.6, 0.4, 0.2], Bold, Thickness[3.*^-6*imgSize]}
+ 
+ps[5] = {RGBColor[0.624866, 0.673302, 0.264296], Bold, 
+     Thickness[3.*^-6*imgSize]}
+ 
+ps[11] = {GrayLevel[0], Bold, ls[11]}
+ 
+ps[12] = {RGBColor[0.72987, 0.239399, 0.230961], Bold, ls[12]}
+ 
+ps[13] = {RGBColor[0.253651, 0.344893, 0.558151], Bold, ls[13]}
+ 
+ps[14] = {RGBColor[0.6, 0.4, 0.2], Bold, ls[14]}
+ 
+ps[15] = {RGBColor[0.624866, 0.673302, 0.264296], Bold, ls[15]}
+ 
+imgSize = 1000
+ 
+ls[1] = Thickness[3.*^-6*imgSize]
+ 
+ls[2] = Thickness[3.*^-6*imgSize]
+ 
+ls[3] = Thickness[3.*^-6*imgSize]
+ 
+ls[4] = Thickness[3.*^-6*imgSize]
+ 
+ls[5] = Thickness[3.*^-6*imgSize]
+ 
+pc[1] = GrayLevel[0]
+ 
+pc[2] = RGBColor[0.72987, 0.239399, 0.230961]
+ 
+pc[3] = RGBColor[0.253651, 0.344893, 0.558151]
+ 
+pc[4] = RGBColor[0.6, 0.4, 0.2]
+ 
+pc[5] = RGBColor[0.624866, 0.673302, 0.264296]
+ 
+pclist = {GrayLevel[0], RGBColor[0.72987, 0.239399, 0.230961], 
+     RGBColor[0.253651, 0.344893, 0.558151], RGBColor[0.6, 0.4, 0.2], 
+     RGBColor[0.624866, 0.673302, 0.264296]}
+ 
+pm[i_] := markers1[[i]]
+ 
+markers1 = {{Graphics[{EdgeForm[{Thickness[Large], pc[1]}], 
+        {pc[1], Disk[{0, 0}]}, {pc[1], Thickness[0.1], Circle[{0, 0}]}}, 
+       ImageSize -> 15], 0.03}, 
+     {Graphics[{EdgeForm[{Thickness[Large], pc[2]}], 
+        {pc[2], Rectangle[{0, 0}]}, {pc[2], Thickness[0.1], 
+         Line[{{0, 0}, {1, 0}, {1, 1}, {0, 1}, {0, 0}}]}}, ImageSize -> 15], 
+      0.03}, {Graphics[{EdgeForm[{Thickness[Large], pc[3]}], 
+        {pc[3], Polygon[{{0.5, 0}, {1, 0.5}, {0.5, 1}, {0, 0.5}}]}, 
+        {pc[3], Thickness[0.1], Line[{{0.5, 0}, {1, 0.5}, {0.5, 1}, {0, 0.5}, 
+           {0.5, 0}}]}}, ImageSize -> 15], 0.03}, 
+     {Graphics[{EdgeForm[{Thickness[Large], pc[4]}], 
+        {pc[4], Polygon[{{0, 0.067}, {1, 0.067}, {0.5, 0.933}}]}, 
+        {pc[4], Thickness[0.1], Line[{{0, 0.067}, {1, 0.067}, {0.5, 0.933}, 
+           {0, 0.067}}]}}, ImageSize -> 15], 0.03}, 
+     {Graphics[{EdgeForm[{Thickness[Large], pc[5]}], 
+        {pc[5], Polygon[{{0, 0.933}, {1, 0.933}, {0.5, 0.067}}]}, 
+        {pc[5], Thickness[0.1], Line[{{0, 0.933}, {1, 0.933}, {0.5, 0.067}, 
+           {0, 0.933}}]}}, ImageSize -> 15], 0.03}}
